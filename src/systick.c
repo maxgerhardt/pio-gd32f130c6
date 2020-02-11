@@ -15,7 +15,7 @@
 #include "gd32f1x0.h"
 #include "systick.h"
 
-static uint32_t delay;
+static volatile uint32_t delay;
 
 /*!
     \brief      configure systick
