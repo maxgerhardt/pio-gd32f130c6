@@ -33,7 +33,7 @@ Flash the compiled `.pio\build\GD32F130C6T6\firmware.bin` after compiling using 
 
 Starts from internal 8MHz oscillator and then uses its PLL to go to 72MHz. Selection is done statically in `system_gd32f1x0.c` in the `framework-spl` folder.
 
-Note: The claimed system speed is a paradox. Datasheet states 42MHz max, but the GD32F1x0 device code uses up 72 MHz with a PLL multiplier of 18...
+Note: The claimed system speed is a paradox. Datasheet states 48MHz max, but the GD32F1x0 device code uses up 72 MHz with a PLL multiplier of 18...
 
 ```c
 static void system_clock_72m_irc8m(void)
