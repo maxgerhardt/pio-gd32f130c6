@@ -27,7 +27,7 @@ Use `pio init --ide=<ide here>`. See [docs](https://docs.platformio.org/en/lates
 
 # Flashing
 
-Flash the compiled `C:\Users\Maxi\Desktop\pio-gd32f130c6\.pio\build\GD32F130C6T6\firmware.bin` using some program or an STLink (default). Run `pio run -t upload` to attempt an OpenOCD upload via an STLink with a STM32F1 target setting (no idea if this works).
+Flash the compiled `.pio\build\GD32F130C6T6\firmware.bin` after compiling using some program or an STLink (default). Run `pio run -t upload` to attempt an OpenOCD upload via an STLink with a STM32F1 target setting (no idea if this works).
 
 # Clock init 
 
