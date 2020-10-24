@@ -2,24 +2,22 @@
 
 Test project for the GigaDevices GD32F130C6 using PlatformIO
 
-# Installation
+# Installation **(UPDATE)**
 
-Go to your PlatformIO home folder (Windows: `C:\Users\<user>\.platformio`, Unix/Max: `/home/<user>/.platformio`). Then go into `packages`. If the folder `framework-spl` exists, delete it. 
+Previously, this project required users to install a custom `framework-spl` package from a `.zip` file in this repository. This is **not necessary anymore** since the package was uploaded by my in the PIO trusted registry. A project can specify usage of my package by adding 
 
-Unpack the `framework-spl.zip` in the `packages` folder so that the directory structure is now 
-
-```
-packages/
-| - framework-spl/
-| |--  gd32/
-| |--  platformio/
-| |--  stm32/
-| |--  package.json
+```ini
+[env]
+; globally override framework-spl for all environments.
+platform_packages = 
+    maxgerhardt/framework-spl@2.10300.0
 ```
 
-(This folder contains the `GD32F1x0_Firmware_Library_v3.1.0` files)
+to the `platformio.ini`. 
 
-Then attempt compilation using `pio run`. 
+This `framework-spl` version contains `GD32F1x0_Firmware_Library_v3.1.0` (to support htis `GD32F130`) as well as `GD32F10x_Firmware_Library_V2.1.2` (to support e.g., `GD32F103`).
+
+To compile this project, simply clone it and execute `pio run` un it. 
 
 # IDE export 
 
