@@ -4,7 +4,7 @@
     "cpu": "cortex-m3",
     "extra_flags": "-DGD32F1x0 -DGD32F130_150 -D__GD32F130_SUBFAMILY -D__GD32F1x0_FAMILY",
     "f_cpu": "72000000L",
-    "mcu": "gd32f130c6t6"
+    "mcu": "gd32f130c8t6"
   },
   "connectivity": [
   ],
@@ -12,7 +12,7 @@
     "default_tools": [
       "stlink"
     ],
-    "jlink_device": "GD32F130C6",
+    "jlink_device": "GD32F130C8",
     "onboard_tools": [
       "stlink"
     ],
@@ -23,10 +23,10 @@
     "stm32cube",
     "spl"
   ],
-  "name": "Generic GD32F130C6T6",
+  "name": "Generic GD32F130C8T6",
   "upload": {
-    "maximum_ram_size": 4096,
-    "maximum_size": 32768,
+    "maximum_ram_size": 8196 ,
+    "maximum_size": 65536,
     "protocol": "stlink",
     "protocols": [
       "jlink",
@@ -35,6 +35,6 @@
       "mbed"
     ]
   },
-  "url": "https://www.gigadevice.com/microcontroller/gd32f130c6t6/",
+  "url": "https://www.gigadevice.com/microcontroller/gd32f130c8t6/",
   "vendor": "GigaDevice"
 }
