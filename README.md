@@ -2,6 +2,10 @@
 
 Test project for the GigaDevices GD32F130C6 using PlatformIO
 
+# **DO NOT USE** 
+# This repository is outdated since a new project was started that supports GigaDevice (a lot of them) in a much much better way!
+# Read through https://github.com/platformio/platformio-core/issues/3927#issuecomment-888465652
+
 # Installation **(UPDATE)**
 
 Previously, this project required users to install a custom `framework-spl` package from a `.zip` file in this repository. This is **not necessary anymore** since the package was uploaded by my in the PIO trusted registry. A project can specify usage of my package by adding 
